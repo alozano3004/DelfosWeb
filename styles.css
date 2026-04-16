@@ -1,0 +1,36 @@
+/* Configuración General */
+:root {
+    --primary: #00bcd4;
+    --dark: #003366;
+    --white: #ffffff;
+}
+
+body { font-family: 'Arial', sans-serif; margin: 0; background: #f4f7f6; color: #333; scroll-behavior: smooth; }
+.container { max-width: 1100px; margin: auto; padding: 20px; }
+
+/* Hero y Botones */
+.hero { background: linear-gradient(rgba(0,51,102,0.85), rgba(0,51,102,0.85)), url('https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1350&q=80'); 
+        height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
+.hero-logo { max-width: 250px; background: white; padding: 10px; border-radius: 10px; margin-bottom: 20px; }
+.btn-primary { background: var(--primary); color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+
+/* Tarjetas */
+.section-title { text-align: center; margin: 40px 0; color: var(--dark); font-size: 2rem; }
+.products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.product-card { background: white; padding: 30px; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-top: 4px solid var(--primary); }
+.product-card i { font-size: 2.5rem; color: var(--primary); margin-bottom: 15px; }
+.btn-card { display: inline-block; margin-top: 15px; color: var(--dark); font-weight: bold; text-decoration: none; border: 1px solid var(--dark); padding: 8px 20px; border-radius: 20px; }
+.btn-card:hover { background: var(--dark); color: white; }
+
+/* Botón Flotante de WhatsApp */
+.whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; padding: 12px 20px; border-radius: 50px; 
+                  text-decoration: none; display: flex; align-items: center; gap: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 1000; transition: 0.3s; }
+.whatsapp-float:hover { transform: scale(1.1); background: #128c7e; }
+.whatsapp-float i { font-size: 1.5rem; }
+
+/* Footer Compacto */
+.main-footer { background: var(--dark); color: white; padding: 40px 0 10px 0; margin-top: 60px; }
+.footer-content { display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center; }
+.footer-section h4 { color: var(--primary); margin-bottom: 15px; }
+.fb-link { color: white; text-decoration: none; background: #3b5998; padding: 8px 15px; border-radius: 5px; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); margin-top: 30px; padding-top: 10px; font-size: 0.8rem; opacity: 0.6; text-align: center; }
